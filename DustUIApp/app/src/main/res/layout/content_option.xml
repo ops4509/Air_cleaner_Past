@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OptionActivity"
+    tools:showIn="@layout/activity_option"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="146dp"
+                android:layout_height="133dp"
+                android:background="#00F2DFFF"
+                android:tint="#E15BF707"
+                android:visibility="invisible"
+                app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="146dp"
+                android:layout_height="133dp"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="전원 on/off" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="146dp"
+                android:layout_height="133dp"
+                android:visibility="invisible"
+                app:srcCompat="@android:drawable/presence_online" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="146dp"
+                android:layout_height="133dp"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/presence_offline" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수동/자동 변경" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

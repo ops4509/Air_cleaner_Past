@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">미세먼지 앱</string>
+    <string name="shape">서울</string>
+    <string name="title_activity_option">OptionActivity</string>
+</resources>
